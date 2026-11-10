@@ -1,0 +1,64 @@
+Tablero 10x10, semilla 5
+10 ~ ~ P ~ ~ P ~ . . ~
+ 9 P ~ ~ . ~ P ~ . ~ P
+ 8 G . . ~ ~ ~ P ~ ~ ~
+ 7 . G G P P P ~ P P ~
+ 6 . . . ~ P P ~ ~ ~ P
+ 5 . G T . ~ T ~ P ~ P
+ 4 . T . . . ~ . ~ . G
+ 3 . . . T ~ P ~ ~ . .
+ 2 . . . . . ~ ~ P ~ .
+ 1 A . . . . ~ P ~ . .
+   1 2 3 4 5 6 7 8 9 0
+
+--- BFS: objetos=4/5 acciones=93 trampas=3 puntaje=3757 expandidos=192
+10 ~ ~ P ~ ~ P ~ . . ~
+ 9 P * * . ~ P ~ . ~ P
+ 8 G * * * ~ ~ P ~ ~ ~
+ 7 * G G P P P ~ P P ~
+ 6 * * * * P P ~ ~ ~ P
+ 5 * G T * * T ~ P ~ P
+ 4 * T * * * * . ~ . G
+ 3 * * * T * P ~ ~ . .
+ 2 * * * * * * ~ P ~ .
+ 1 A * * * * * P ~ . .
+   1 2 3 4 5 6 7 8 9 0
+
+--- DFS: objetos=4/5 acciones=562 trampas=25 puntaje=2188 expandidos=589
+10 ~ ~ P ~ ~ P ~ . . ~
+ 9 P * * . ~ P ~ . ~ P
+ 8 G * * * ~ ~ P ~ ~ ~
+ 7 * G G P P P ~ P P ~
+ 6 * * * * P P ~ ~ ~ P
+ 5 * G T * * T ~ P ~ P
+ 4 * T * * * * . ~ . G
+ 3 * * * T * P ~ ~ . .
+ 2 * * * * * * ~ P ~ .
+ 1 A * * * * * P ~ . .
+   1 2 3 4 5 6 7 8 9 0
+
+--- A* sin heurística: objetos=4/5 acciones=93 trampas=3 puntaje=3757 expandidos=256
+10 ~ ~ P ~ ~ P ~ . . ~
+ 9 P * * . ~ P ~ . ~ P
+ 8 G * * * ~ ~ P ~ ~ ~
+ 7 * G G P P P ~ P P ~
+ 6 * * * * P P ~ ~ ~ P
+ 5 * G T * * T ~ P ~ P
+ 4 * T * * * * . ~ . G
+ 3 * * * T * P ~ ~ . .
+ 2 * * * * * * ~ P ~ .
+ 1 A * * * * * P ~ . .
+   1 2 3 4 5 6 7 8 9 0
+
+--- A* con heurística: objetos=4/5 acciones=93 trampas=3 puntaje=3757 expandidos=94
+10 ~ ~ P ~ ~ P ~ . . ~
+ 9 P * * . ~ P ~ . ~ P
+ 8 G * * * ~ ~ P ~ ~ ~
+ 7 * G G P P P ~ P P ~
+ 6 * * * * P P ~ ~ ~ P
+ 5 * G T * * T ~ P ~ P
+ 4 * T * * * * . ~ . G
+ 3 * * * T * P ~ ~ . .
+ 2 * * * * * * ~ P ~ .
+ 1 A * * * * * P ~ . .
+   1 2 3 4 5 6 7 8 9 0
